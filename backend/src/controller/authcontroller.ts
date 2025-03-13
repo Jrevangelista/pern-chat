@@ -45,7 +45,7 @@ export const signup = async (req: Request, res: Response) => {
 			res.status(201).json({
 				id: newUser.id,
 				fullname: newUser.fullname,
-				username: newUser.userName,
+				userName: newUser.userName,
 				profilePic: newUser.profilePic,
 			});
 		} else {
@@ -106,8 +106,8 @@ export const getMe = async (req:Request, res:Response) => {
 		res.status(200).json({
 			id: user.id,
 			fullname: user.fullname,
-			username: user.userName,
-			profilePic: user.profilePic
+			userName: user.userName,
+			profilePic: user.profilePic,
 
 		});
 
